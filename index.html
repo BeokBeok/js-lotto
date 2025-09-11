@@ -5,12 +5,46 @@
     <title>🎱 행운의 로또</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script type="module" crossorigin src="/assets/index-CYmDXU94.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BvA36ezl.css">
   </head>
 
   <body>
     <div id="app">
-      <h1>🎱 행운의 로또</h1>
+      <h1>🎱 내 번호 당첨 확인 🎱</h1>
+      <main>
+        <div class="lotto-price">
+          <p>구입할 금액을 입력해주세요.</p>
+          <form>
+            <input type="number" placeholder="금액" />
+            <button type="submit">구입</button>
+          </form>
+        </div>
+        <div class="lotto-result" style="display: none">
+          <p class="lotto-count"></p>
+          <ul class="lotto-list"></ul>
+        </div>
+        <div class="winning-lotto" style="display: none">
+          <p>지난 주 당첨번호 6개와 보너스 번호 1개를 입력해주세요.</p>
+
+          <form>
+            <div class="numbers-row">
+              <label for="winning-number">당첨 번호</label>
+              <input name="winning-number" type="number" />
+              <input name="winning-number" type="number" />
+              <input name="winning-number" type="number" />
+              <input name="winning-number" type="number" />
+              <input name="winning-number" type="number" />
+              <input name="winning-number" type="number" />
+
+              <label for="bonus-number">보너스 번호</label>
+              <input name="bonus-number" type="number" />
+            </div>
+
+            <button type="submit">결과 확인하기</button>
+          </form>
+        </div>
+      </main>
     </div>
-    <script type="module" src="./src/step2-index.js"></script>
   </body>
 </html>
